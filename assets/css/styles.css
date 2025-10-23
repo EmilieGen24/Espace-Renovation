@@ -1,5 +1,23 @@
 header {
   background-color: rgb(7, 56, 82);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  border-right: 1px solid white;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+header nav ul li a {
+  color: white;
 }
 
 body {

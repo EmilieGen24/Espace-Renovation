@@ -3,8 +3,27 @@
 
 header{
     background-color: var.$couleur-principale;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    
-        
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
             
+            li{
+                border-right: 1px solid white;
+                padding-right: 15px;
+                padding-left: 15px;
+
+                a{
+                    color: var.$couleur-secondaire;
+                }
+            }
+        }
+    }
+                
 }
