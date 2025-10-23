@@ -2,10 +2,15 @@
 body{
     font-family: var.$police-principale;
 }
+h1, h2, h3, h4{
+    color: var.$couleur-principale;
+}
 
 p {
     font-size: 1rem;
+    color: var.$couleur-principale;
 }
+
 li{
     list-style: none;
 }
@@ -16,5 +21,5 @@ a {
 }
 
 img{
-
+    
 }

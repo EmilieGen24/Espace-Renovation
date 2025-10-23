@@ -24,8 +24,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1, h2, h3, h4 {
+  color: rgb(7, 56, 82);
+}
+
 p {
   font-size: 1rem;
+  color: rgb(7, 56, 82);
 }
 
 li {
@@ -45,6 +50,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.banner-accueil {
+  background-image: url(../../img/PHOTO-BUREAU.jpg);
+}
+.banner-accueil h1 span {
+  color: gold;
+}
+
+.about {
+  text-align: center;
+}
+.about h3 {
+  text-transform: uppercase;
+}
+.about p {
+  line-height: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */

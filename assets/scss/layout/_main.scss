@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.banner-accueil{
+    background-image: url(../../img/PHOTO-BUREAU.jpg);
+    
+    h1{
+        span{
+            color: gold;
+        }
+    }
+}
+
+.about{
+    text-align: center;
+
+        h3{
+            text-transform: uppercase;
+        }
+
+        p{
+            line-height: 2;
+        }
+}
