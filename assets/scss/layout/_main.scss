@@ -1,12 +1,18 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-.banner-accueil{
-    background-image: url(../../img/PHOTO-BUREAU.jpg);
-    
-    h1{
-        span{
-            color: gold;
+#banner{
+    background-image: url(../img/PHOTO-BUREAU.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+
+        h1{
+            padding-top: 10%;
+            color: var.$couleur-secondaire;
+
+            span{
+                color: gold;
         }
     }
 }
@@ -20,5 +26,24 @@
 
         p{
             line-height: 2;
+        }
+}
+
+#rdv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+        .rdv-container{
+            display: flex;
+            gap: 20px;
+            padding-bottom: 30px;
+
+            .rdv-content{
+                text-align: center;
+                width: 40%;
+            }  
         }
 }
