@@ -27,13 +27,20 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1 {
+  color: white;
+  font-size: 3rem;
+  padding-top: 10%;
+}
+
+h2, h3, h4 {
   color: rgb(7, 56, 82);
 }
 
 p {
   font-size: 1rem;
   color: rgb(7, 56, 82);
+  line-height: 2;
 }
 
 li {
@@ -42,6 +49,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+span {
+  color: gold;
 }
 
 .container {
@@ -61,13 +72,6 @@ a {
   background-size: cover;
   height: 40vh;
 }
-#banner h1 {
-  padding-top: 10%;
-  color: white;
-}
-#banner h1 span {
-  color: gold;
-}
 
 .about {
   text-align: center;
@@ -78,9 +82,6 @@ a {
 }
 .about strong {
   font-weight: 800;
-}
-.about p {
-  line-height: 2;
 }
 
 #rdv {
@@ -231,7 +232,7 @@ footer .footer-container .contact p {
   padding: 10px 20px;
   background-color: rgb(7, 56, 82);
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .rdv-btn a:hover {
   box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
@@ -242,7 +243,7 @@ footer .footer-container .contact p {
   padding: 10px 20px;
   background-color: rgb(7, 56, 82);
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .realisations-btn a:hover {
   box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
@@ -251,14 +252,86 @@ footer .footer-container .contact p {
 
 /* responsive tablette */
 @media screen and (max-width: 800px) {
-  .navbar ul {
+  header .navbar ul {
     display: none;
   }
-  .navbar .menu-burger {
+  header .navbar .menu-burger {
     display: flex;
     justify-content: flex-end;
   }
+  header .navbar .menu-burger img {
+    width: 20%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .realisations .realisations-container .realisation-content {
+    width: 45%;
+  }
+  footer .footer-container {
+    align-items: start;
+  }
 }
 /* responsive mobile */
+@media screen and (max-width: 360px) {
+  header .navbar .header-logo img {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 50%;
+  }
+  #rdv .rdv-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15%;
+  }
+  #rdv .rdv-container .rdv-content {
+    width: 100%;
+  }
+  .realisations {
+    text-align: center;
+    margin-top: 15%;
+  }
+  .realisations .realisations-container {
+    flex-direction: column;
+  }
+  .realisations .realisations-container .realisation-content {
+    width: 100%;
+  }
+  .projet {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .projet .projet-container {
+    flex-direction: column;
+  }
+  .projet .projet-container .projet-content {
+    width: 100%;
+  }
+  footer .footer-container {
+    flex-direction: column;
+  }
+  footer .footer-container .footer-content {
+    width: 100%;
+  }
+  footer .footer-container .metiers {
+    text-align: center;
+  }
+  footer .footer-container .contact {
+    border: none;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

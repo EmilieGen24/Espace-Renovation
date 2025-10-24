@@ -1,7 +1,7 @@
 /* responsive tablette */
 @media screen and (max-width: 800px){
 
-    .navbar{
+    header .navbar{
         
         ul{
         display: none;
@@ -9,16 +9,98 @@
         .menu-burger{
         display: flex;
         justify-content: flex-end;
+
+            img{
+                width: 20%;
+            }
         }
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .realisations .realisations-container .realisation-content {
+        width: 45%;
+    }
+    footer .footer-container{
+        align-items: start;
     }
 }
 
 /* responsive mobile */
 @media screen and (max-width: 360px){
 
+    header .navbar{
 
+        .header-logo img{
+            width: 100%;
+        } 
+    }
 
+    h1{
+        text-align: center;
+        padding-top: 50%;
+    }
 
+    #rdv .rdv-container{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15%;
 
-    
+        .rdv-content{
+            width: 100%;
+        }
+        
+    }
+
+    .realisations {
+        text-align: center;
+        margin-top: 15%;
+
+        .realisations-container {
+            flex-direction: column;
+
+            .realisation-content {
+                width: 100%;
+            }
+        }
+    }
+
+    .projet{
+
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+
+        .projet-container{
+            flex-direction: column;
+
+            .projet-content{
+                width: 100%;
+            }
+        }
+    }
+
+    footer .footer-container{
+        flex-direction: column;
+
+        .footer-content{
+            width: 100%;
+        }
+        .metiers{
+            text-align: center;
+        }
+        .contact{
+            border: none;
+            text-align: center;
+        }
+    }  
 }

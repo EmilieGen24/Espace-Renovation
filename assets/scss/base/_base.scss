@@ -1,17 +1,25 @@
 @use "../abstracts/variables" as var;
-body{
+body {
     font-family: var.$police-principale;
 }
-h1, h2, h3, h4{
+
+h1{
+    color: var.$couleur-secondaire;
+    font-size: 3rem;
+    padding-top: 10%;
+}
+
+h2, h3, h4 {
     color: var.$couleur-principale;
 }
 
 p {
     font-size: 1rem;
     color: var.$couleur-principale;
+    line-height: 2;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -19,6 +27,6 @@ a {
     text-decoration: none;
 }
 
-img{
-
-}
+span {
+    color: gold;
+    }
