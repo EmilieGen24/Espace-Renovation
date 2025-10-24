@@ -1,0 +1,35 @@
+
+/* responsive tablette */
+@media screen and (max-width: 800px){
+
+    .navbar{
+        ul{
+        display: none;
+        }
+        .menu-burger{
+        display: flex;
+        justify-content: flex-end;
+    }
+    }
+    
+        
+        
+
+
+
+
+
+
+
+
+}
+
+/* responsive mobile */
+@media screen and (max-width: 360px){
+
+
+
+
+
+    
+}

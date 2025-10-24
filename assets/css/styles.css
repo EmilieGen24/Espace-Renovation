@@ -3,20 +3,23 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-header nav {
+header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul {
+header .navbar .menu-burger {
+  display: none;
+}
+header .navbar ul {
   display: flex;
 }
-header nav ul li {
+header .navbar ul li {
   border-right: 1px solid white;
   padding-right: 15px;
   padding-left: 15px;
 }
-header nav ul li a {
+header .navbar ul li a {
   color: white;
 }
 
@@ -230,12 +233,20 @@ footer .footer-container .contact p {
   color: white;
   border-radius: 10px;
 }
+.rdv-btn a:hover {
+  box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
+  transition: all 0.3s ease;
+}
 
 .realisations-btn a {
   padding: 10px 20px;
   background-color: rgb(7, 56, 82);
   color: white;
   border-radius: 10px;
+}
+.realisations-btn a:hover {
+  box-shadow: 3px 3px 3px 5px rgb(200, 185, 100);
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */

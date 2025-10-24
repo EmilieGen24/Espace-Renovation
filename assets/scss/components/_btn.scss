@@ -1,10 +1,25 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-.rdv-btn a{
-     @include mix.button
+.rdv-btn{
+
+    a{
+        @include mix.button;
+    }
+    a:hover{
+        box-shadow: 3px 3px 3px 5px (rgb(200, 185, 100));
+        transition: all 0.3s ease;
+    }
 }
 
-.realisations-btn a{
-    @include mix.button
+.realisations-btn{
+
+    a{
+        @include mix.button;
+
+    }
+    a:hover{
+        box-shadow: 3px 3px 3px 5px (rgb(200, 185, 100));
+        transition: all 0.3s ease;
+    }
 }
