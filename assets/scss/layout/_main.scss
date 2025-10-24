@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
+// section banner
 #banner{
     background-image: url(../img/PHOTO-BUREAU.jpg);
     background-position: center;
@@ -17,11 +18,17 @@
     }
 }
 
+// section about
 .about{
     text-align: center;
 
         h3{
             text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        strong{
+            font-weight: 800;
         }
 
         p{
@@ -29,6 +36,7 @@
         }
 }
 
+// section rdv
 #rdv{
     display: flex;
     flex-direction: column;
@@ -45,5 +53,84 @@
                 text-align: center;
                 width: 40%;
             }  
+        }
+}
+
+// section realisations
+.realisations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        h2{
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .realisations-container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 5%;
+
+            .realisation-content{
+                width: 30%;
+                text-align: center;
+
+                img{
+                    width: 100%;
+                }
+                h4{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-size: 0.9rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+}
+
+// section projets
+.projet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+        h2{
+            margin-bottom: 5px;
+        }
+        h3{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .projet-container{
+            display: flex;
+            gap: 30px;
+            width: 100%;
+            
+            .projet-content{
+                text-align: center;
+                width: 40%;
+
+                a{
+                    color: var.$couleur-principale;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
         }
 }

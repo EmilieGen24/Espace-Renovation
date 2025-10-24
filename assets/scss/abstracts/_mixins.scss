@@ -1,6 +1,8 @@
+@use"variables" as var;
+
 @mixin button{
     padding: 10px 20px;
-    background-color: $couleur-principale;
-    color: $couleur-secondaire;
+    background-color: var.$couleur-principale;
+    color: var.$couleur-secondaire;
     border-radius: 10px;
 }

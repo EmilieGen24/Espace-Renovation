@@ -71,6 +71,10 @@ a {
 }
 .about h3 {
   text-transform: uppercase;
+  font-weight: 500;
+}
+.about strong {
+  font-weight: 800;
 }
 .about p {
   line-height: 2;
@@ -91,6 +95,147 @@ a {
 #rdv .rdv-container .rdv-content {
   text-align: center;
   width: 40%;
+}
+
+.realisations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.realisations h2 {
+  margin-bottom: 0;
+}
+.realisations h3 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.realisations .realisations-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.realisations .realisations-container .realisation-content {
+  width: 30%;
+  text-align: center;
+}
+.realisations .realisations-container .realisation-content img {
+  width: 100%;
+}
+.realisations .realisations-container .realisation-content h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+.realisations .realisations-container .realisation-content p {
+  font-size: 0.9rem;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.projet h2 {
+  margin-bottom: 5px;
+}
+.projet h3 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.projet .projet-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.projet .projet-container .projet-content {
+  text-align: center;
+  width: 40%;
+}
+.projet .projet-container .projet-content a {
+  color: rgb(7, 56, 82);
+}
+.projet .projet-container .projet-content a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(7, 56, 82);
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+footer .copy p {
+  color: white;
+  text-align: center;
+}
+footer h4 {
+  color: white;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer-container .footer-content {
+  width: 40%;
+  text-align: start;
+}
+footer .footer-container .footer-content p {
+  color: white;
+}
+footer .footer-container .footer-content .footer-logo {
+  width: 100%;
+}
+footer .footer-container .footer-content .footer-icon {
+  padding-left: 20px;
+}
+footer .footer-container .footer-content .footer-icon img {
+  width: 10%;
+}
+footer .footer-container .metiers {
+  width: 90%;
+}
+footer .footer-container .metiers p {
+  padding: 5px;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+}
+footer .footer-container .contact {
+  border-left: 1px solid white;
+  padding-left: 10px;
+}
+footer .footer-container .contact h4 {
+  margin-top: 10px;
+}
+footer .footer-container .contact p {
+  margin: 5px;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
+  font-family: "Lato Light";
+  src: url(../../fonts/Lato/Lato-Light.ttf);
+}
+.rdv-btn a {
+  padding: 10px 20px;
+  background-color: rgb(7, 56, 82);
+  color: white;
+  border-radius: 10px;
+}
+
+.realisations-btn a {
+  padding: 10px 20px;
+  background-color: rgb(7, 56, 82);
+  color: white;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

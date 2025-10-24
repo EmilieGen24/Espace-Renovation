@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.rdv-btn a{
+     @include mix.button
+}
+
+.realisations-btn a{
+    @include mix.button
+}

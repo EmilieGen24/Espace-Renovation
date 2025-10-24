@@ -1,2 +1,61 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
+
+footer{
+    background-color: var.$couleur-principale;
+    padding-bottom: 5px;
+    padding-top: 20px;
+
+    .copy p{
+        color: var.$couleur-secondaire;
+        text-align: center;
+    }
+    h4{
+        color: var.$couleur-secondaire;
+    }
+
+    .footer-container{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .footer-content{
+            width: 40%;
+            text-align: start;
+
+            p{
+                color: var.$couleur-secondaire;
+            }
+            .footer-logo{
+                width: 100%;
+            }
+            .footer-icon{
+                padding-left: 20px;
+
+                 img{
+                    width: 10%;
+                }
+            }
+        }
+
+        .metiers{
+            width: 90%;
+            p{
+                padding: 5px;
+                letter-spacing: 0.2rem;
+                font-weight: 100;
+            }
+        }
+
+        .contact{
+            border-left: 1px solid white;
+            padding-left: 10px;
+            h4{
+                margin-top: 10px;
+            }
+            p{
+                margin: 5px;
+            }
+        }  
+    }
+}
